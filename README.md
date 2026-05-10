@@ -7,13 +7,13 @@
 在 Claude Code 中运行：
 
 ```
-/install-skill https://github.com/alchaincyf/dalu-skills/tree/main/{skill名}
+/install-skill https://github.com/duuhuang-ai/dalu-skills/tree/main/{skill名}
 ```
 
 例如：
 
 ```
-/install-skill https://github.com/alchaincyf/dalu-skills/tree/main/xhs-blogger-report
+/install-skill https://github.com/duuhuang-ai/dalu-skills/tree/main/xhs-blogger-report
 ```
 
 ## Skills 一览
