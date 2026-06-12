@@ -16,7 +16,24 @@
 /install-skill https://github.com/duuhuang-ai/dalu-skills/tree/main/xhs-blogger-report
 ```
 
+```
+/install-skill https://github.com/duuhuang-ai/dalu-skills/tree/main/feishu-base-pair-incremental-sync
+```
+
 ## Skills 一览
+
+### 飞书多维表格同步
+
+**feishu-base-pair-incremental-sync** — 飞书多维表格原数据/新数据增量同步
+
+用户提交一组或多组飞书多维表格「原数据 → 新数据」配对，并指定每组的核对字段后，先 dry-run 预检，再把原数据表中新增的记录追加到新数据表。
+
+- 支持多组表批量增量同步
+- 每组可独立指定核对字段，如更新时间、发布时间、录入时间
+- 写入前强制 dry-run，用户确认后才执行追加
+- 只追加，不删除、不覆盖、不修改字段结构
+- 内置日期解析、链接去重、共有字段写入、写入后复查
+- 依赖：lark-cli
 
 ### 博主分析
 
@@ -33,4 +50,5 @@
 
 | Skill | 依赖 |
 |-------|------|
+| feishu-base-pair-incremental-sync | lark-cli |
 | xhs-blogger-report | lark-cli、lark-base skill |
