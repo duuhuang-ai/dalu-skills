@@ -20,7 +20,22 @@
 /install-skill https://github.com/duuhuang-ai/dalu-skills/tree/main/feishu-base-pair-incremental-sync
 ```
 
+```
+/install-skill https://github.com/duuhuang-ai/dalu-skills/tree/main/brok-prompt-generator
+```
+
 ## Skills 一览
+
+### 提示词生成
+
+**brok-prompt-generator** — BROK 框架提示词生成器
+
+基于 BROK 框架（Background/背景、Role/角色、Objective/目标、Key Results & Constraints/关键结果与约束）生成、改写、优化、审查提示词。
+
+- 三种模式：全新生成、改写优化、提示词审查
+- 将模糊需求转化为具体可观测的标准
+- 支持中文/英文提示词
+- 输出包含 BROK 拆解、可复用提示词、使用说明
 
 ### 飞书多维表格同步
 
@@ -50,5 +65,6 @@
 
 | Skill | 依赖 |
 |-------|------|
+| brok-prompt-generator | 无 |
 | feishu-base-pair-incremental-sync | lark-cli |
 | xhs-blogger-report | lark-cli、lark-base skill |
