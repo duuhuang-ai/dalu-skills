@@ -1,0 +1,4 @@
+interface:
+  display_name: "电商详情图分段生成"
+  short_description: "把商品图按参考风格分段生成电商详情页，确认后再拼接成长图。"
+  default_prompt: "使用 dianshang-detail-page-generator，根据商品图生成电商详情页。先分析商品卖点并核对品牌、尺码和参考风格，再分段出图，确认后拼接成长图。"
