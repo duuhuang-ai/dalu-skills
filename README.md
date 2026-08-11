@@ -30,9 +30,9 @@
 - 给出 3 个可落地的改造方向和上架包装建议
 - 默认生成可直接打开的独立 HTML 选品分析报告
 
-### 文案提纯
+### 分享式提纯版原文
 
-**copywriting-purification** — 视频/音频文案提纯为"分享式提纯版原文"
+**分享式提纯版原文** — 视频/音频文案提纯为"分享式提纯版原文"
 
 将抖音/小红书视频链接、本地视频或原始文字稿一键转化为结构化原文并自动交付飞书文档。
 
@@ -46,4 +46,4 @@
 | Skill | 依赖 |
 |-------|------|
 | xhs-virtual-selection-assistant | 无 |
-| copywriting-purification | TikHub API, 百炼 DashScope, 阿里云 OSS, 飞书 lark-doc |
+| 分享式提纯版原文 | TikHub API, 百炼 DashScope, 阿里云 OSS, 飞书 lark-doc |
