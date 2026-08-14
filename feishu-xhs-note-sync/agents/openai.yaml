@@ -1,0 +1,4 @@
+interface:
+  display_name: "飞书小红书笔记同步"
+  short_description: "读取飞书多维表格链接并采集小红书笔记数据后自动回写"
+  default_prompt: "Use $feishu-xhs-note-sync to collect Xiaohongshu note data from this Feishu Base link and write the results back to the same view."
