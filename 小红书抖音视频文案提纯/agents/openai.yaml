@@ -1,0 +1,4 @@
+interface:
+  display_name: "小红书抖音视频文案提纯（支持链接/本地视频）"
+  short_description: "把抖音/小红书链接、本地视频或文字稿整理成提纯版原文（小红书抖音视频文案提纯），自动交付飞书文档"
+  default_prompt: "Use $文案提纯 to extract, transcribe, and purify this content into a Feishu doc."
