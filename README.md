@@ -30,22 +30,8 @@
 - 给出 3 个可落地的改造方向和上架包装建议
 - 默认生成可直接打开的独立 HTML 选品分析报告
 
-### 采集小红书笔记到多维表格
-
-**feishu-xhs-note-sync** — 飞书多维表格小红书笔记采集与回写
-
-读取固定飞书多维表格模板里的小红书笔记链接，采集公开笔记页的标题、正文、互动数、账号和封面链接，并在用户授权后写回同一视图的可见记录。
-
-- 输入必须是包含 `base`、`table`、`view` 的飞书 Base 链接
-- 只处理当前 view 可见记录，不扫描整张表
-- 先 dry-run 预览记录 ID、源链接和计划写入字段，再由用户授权写回
-- 目标字段已有值时自动跳过，避免覆盖人工整理内容
-- 未知互动数保持空白，不写入 `0`
-- 多维表格模板：https://yulu-tech.feishu.cn/base/GeBrboz1QatjljsmFTKcRSA5nXf?table=tblkBmkE0ytnAKSu&view=vewk4K2vGi
-
 ## 依赖
 
 | Skill | 依赖 |
 |-------|------|
 | xhs-virtual-selection-assistant | 无 |
-| feishu-xhs-note-sync | Python 3, 已认证的 lark-cli, 可访问公开小红书笔记页的网络环境, 符合模板字段的飞书多维表格 |
