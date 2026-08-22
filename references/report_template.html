@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小红书虚拟选品诊断</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#1f2329; --sub:#646a73;
+    --line:#e5e6eb; --brand:#fe2c55; --green:#00b42a; --orange:#ff7d00; --red:#f53f3f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.7;padding:32px 16px}
+  .wrap{max-width:820px;margin:0 auto;background:var(--card);border:1px solid var(--line);
+    border-radius:14px;padding:36px 40px;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+  header{border-bottom:2px solid var(--brand);padding-bottom:16px;margin-bottom:24px}
+  h1{font-size:24px;margin:0 0 6px}
+  .sub{color:var(--sub);font-size:13px}
+  h2{font-size:18px;margin:28px 0 10px;padding-left:10px;border-left:4px solid var(--brand)}
+  h3{font-size:15px;margin:16px 0 6px;color:#374151}
+  p{margin:8px 0}
+  .verdict{display:inline-block;font-weight:700;padding:4px 14px;border-radius:999px;color:#fff;font-size:15px}
+  .v-go{background:var(--green)} .v-fix{background:var(--orange)} .v-no{background:var(--red)}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+  th{background:#fafafa;width:38%}
+  .score-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:12px 0}
+  .score{border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .score .k{color:var(--sub);font-size:13px}
+  .score .v{font-size:22px;font-weight:700;margin-top:4px}
+  .hi{color:var(--green)} .mid{color:var(--orange)} .lo{color:var(--red)}
+  ul{margin:8px 0 8px 4px;padding-left:20px}
+  li{margin:5px 0}
+  .note{background:#fff7e8;border:1px solid #ffe4ba;color:#7a5b00;
+    border-radius:8px;padding:10px 14px;font-size:13px;margin:14px 0}
+  .steps{counter-reset:s;list-style:none;padding-left:0}
+  .steps li{counter-increment:s;position:relative;padding-left:34px;margin:8px 0}
+  .steps li:before{content:counter(s);position:absolute;left:0;top:2px;width:22px;height:22px;
+    background:var(--brand);color:#fff;border-radius:50%;text-align:center;line-height:22px;font-size:12px}
+  footer{margin-top:28px;border-top:1px solid var(--line);padding-top:14px;color:var(--sub);font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>小红书虚拟选品诊断</h1>
+    <div class="sub">本报告参考小红书近期热销虚拟商品与平台下架违规样本，仅供商家决策参考，非官方规则解读。</div>
+  </header>
+
+  <h2>1. 最终判断</h2>
+  <p><span class="verdict v-go">推荐做</span> <span>（一句话判断留空待填）</span></p>
+
+  <h2>2. 商品基础信息</h2>
+  <table>
+    <tr><th>商品名称</th><td>—</td></tr>
+    <tr><th>商品类目</th><td>—</td></tr>
+    <tr><th>商品价格</th><td>—</td></tr>
+    <tr><th>商品销量</th><td>—</td></tr>
+    <tr><th>来源类型</th><td>商品链接采集 / 手动商品信息</td></tr>
+    <tr><th>图片 / 链接</th><td>—</td></tr>
+  </table>
+
+  <h2>3. 机会评分</h2>
+  <div class="score-grid">
+    <div class="score"><div class="k">需求强度</div><div class="v hi">5</div></div>
+    <div class="score"><div class="k">价格合理度</div><div class="v hi">5</div></div>
+    <div class="score"><div class="k">差异化空间</div><div class="v mid">3</div></div>
+    <div class="score"><div class="k">交付难度</div><div class="v mid">3</div></div>
+    <div class="score"><div class="k">违规风险</div><div class="v lo">2</div></div>
+    <div class="score"><div class="k">增长潜力</div><div class="v">—（无趋势数据省略）</div></div>
+  </div>
+
+  <h2>4. 为什么这么判断</h2>
+  <p>（基于需求、销量、价格、竞争、交付难度、平台风险的务实解释。）</p>
+
+  <h2>5. 爆品拆解</h2>
+  <h3>用户为什么买</h3>
+  <p>—</p>
+  <h3>参考品到底在卖什么</h3>
+  <p>—</p>
+
+  <h2>6. 不能照搬的地方</h2>
+  <ul>
+    <li>版权素材 / 课程资料搬运</li>
+    <li>题库 / 答案 / 软件授权</li>
+    <li>AI / PS / 字体素材</li>
+    <li>过度承诺、自动发货纠纷、敏感词、资质问题</li>
+  </ul>
+
+  <h2>7. 怎么改成自己的产品</h2>
+  <ul>
+    <li>方向一：—</li>
+    <li>方向二：—</li>
+    <li>方向三：—</li>
+  </ul>
+
+  <h2>8. 上架包装建议</h2>
+  <table>
+    <tr><th>标题方向</th><td>—</td></tr>
+    <tr><th>封面卖点</th><td>—</td></tr>
+    <tr><th>套餐结构</th><td>—</td></tr>
+    <tr><th>详情页大纲</th><td>—</td></tr>
+    <tr><th>发货说明</th><td>—</td></tr>
+    <tr><th>售后说明</th><td>—</td></tr>
+  </table>
+
+  <h2>9. 上架前风险检查清单</h2>
+  <ul>
+    <li>标题：是否含违规词 / 绝对化用语</li>
+    <li>详情页：卖点是否过度承诺</li>
+    <li>交付物：是否涉及版权 / 授权</li>
+    <li>承诺措辞：是否可兑现</li>
+    <li>售后：争议处理是否清晰</li>
+  </ul>
+
+  <h2>10. 下一步动作</h2>
+  <ol class="steps">
+    <li>—</li>
+    <li>—</li>
+    <li>—</li>
+    <li>—</li>
+    <li>—</li>
+  </ol>
+
+  <div class="note">本诊断为基于商品详情信息的样本判断，不替代平台官方规则。上架前请自行复核最新社区规范与资质要求。</div>
+
+  <footer>由「小红书虚拟选品诊断」Skill 生成 · 报告为独立 HTML，可直接分享。</footer>
+</div>
+</body>
+</html>
